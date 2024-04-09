@@ -40,7 +40,7 @@ export function RootUI() {
       </header>
       <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 py-6">
         <section
-          className="flex flex-col items-center justify-center space-y-2 text-center py-10">
+          className="flex flex-col items-center justify-center space-y-2 text-center h-96">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">Adhham Safwan</h1>
             <p
@@ -52,7 +52,7 @@ export function RootUI() {
               I build beautiful and responsive websites. Welcome to my portfolio.
             </p>
           </div>
-          <div className="flex items-center justify-center space-x-4">
+          <div className="flex items-center justify-center space-x-4 pt-5">
             <Link
               className="inline-flex h-9 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm px-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
               href="#">
@@ -65,16 +65,16 @@ export function RootUI() {
             </Link>
           </div>
         </section>
-        <section className="grid gap-6 md:grid-cols-2 lg:gap-10 py-10">
-          <div className="flex flex-col gap-2">
+        <section className="grid gap-6 lg:gap-10 space-y-44 justify-center">
+          <div className="flex flex-col gap-2 items-center text-justify">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl">About Me</h2>
             <p
               className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400">
               Recent Computer Science Graduate with a passion for developing scalable web applications and working across the full stack. I&apos;m looking to join forces with any size organization to grow my skill set while contributing to the positive outcome of products that are offered by the Company.
             </p>
           </div>
-          <div className="flex flex-col gap-2 py-10">
-            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl">Skills</h2>
+          <div className="flex flex-col gap-2 py-10 max-w-prose w-">
+            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center">Skills</h2>
             <div className="grid gap-2 md:grid-cols-2">
               <div>HTML</div>
               <Progress value="90" />
@@ -89,7 +89,7 @@ export function RootUI() {
             </div>
           </div>
         </section>
-        <section className="grid gap-6 md:grid-cols-2 lg:gap-10 py-10">
+        <section className="grid gap-6 lg:gap-10 py-10">
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl">Projects</h2>
             <div className="grid gap-2">
