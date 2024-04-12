@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import {
   CardTitle,
   CardDescription,
@@ -20,6 +19,20 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+
+import {
+  User,
+  Folders,
+  CodeSquare,
+  Contact,
+  FileText,
+  AppWindow,
+  Code2,
+  SendHorizontal,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 
 export function RootUI() {
   const skillItems = [
@@ -104,54 +117,64 @@ export function RootUI() {
       description: "A place to explore high quality images from Unsplash",
       image: "/pictoria.png",
       live: "https://pictoria-adhham.vercel.app",
-      code: ""
+      code: "https://github.com/adhhamdev/pictoria",
     },
     {
       title: "Evently",
       description: "A Platform to host, connect and celebrate your Events.",
       image: "/evently.png",
       live: "https://evently-adhham.vercel.app",
-      code: ""
+      code: "https://github.com/adhhamdev/startup-directory",
     },
     {
       title: "Startup Directory",
       description: "A collection of Startups to browse and lookup for.",
       image: "/startup-directory.png",
       live: "https://startup-directory.vercel.app",
-      code: ""
+      code: "https://github.com/adhhamdev/evently",
     },
-  ]
+  ];
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+        <a className="flex items-center justify-center" href="#">
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Adhham Safwan</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+        </a>
+        <nav className="ml-auto flex gap-4 sm:gap-8">
+          <a
+            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+            href="#intro"
           >
-            Projects
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            <User className="mr-2" />
+            Intro
+          </a>
+          <a
+            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+            href="#skills"
           >
+            <CodeSquare className="mr-2" />
             Skills
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+          </a>
+          <a
+            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+            href="#projects"
           >
+            <Folders className="mr-2" />
+            Projects
+          </a>
+          <a
+            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+            href="#contact-me"
+          >
+            <Contact className="mr-2" />
             Contact
-          </Link>
+          </a>
         </nav>
       </header>
       <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 py-6">
-        <section className="flex flex-col items-center justify-center space-y-2 text-center h-96">
+        <section className="flex flex-col items-center justify-center space-y-2 text-center h-96" id="intro">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">
               Adhham Safwan
@@ -165,18 +188,21 @@ export function RootUI() {
             </p>
           </div>
           <div className="flex items-center justify-center space-x-4 pt-5">
-            <Link
+            <a
               className="inline-flex h-9 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm px-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
-              href="#"
+              href="#contact-me"
             >
+              <Contact className="mr-2" />
               Contact Me
-            </Link>
-            <Link
+            </a>
+            <a
               className="inline-flex h-9 items-center justify-center rounded-md border border-slate-200  bg-white shadow-sm px-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
-              href="#"
+              href="https://drive.google.com/file/d/1nJJXINjPP8KVjHibXZc8XoSSXjwFheDI/view?usp=sharing"
+              download
             >
+              <FileText className="mr-2" />
               Resume
-            </Link>
+            </a>
           </div>
         </section>
         <section className="grid gap-6 lg:gap-10 justify-center">
@@ -192,7 +218,7 @@ export function RootUI() {
               products that are offered by the Company.
             </p>
           </div>
-          <div className="flex flex-col gap-6 mb-12">
+          <div className="flex flex-col gap-6 mb-12" id="skills">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
               Skills
             </h2>
@@ -221,8 +247,8 @@ export function RootUI() {
             </Carousel>
           </div>
         </section>
-        <section className="grid gap-6 lg:gap-10 py-10">
-          <div className="flex flex-col gap-2 mb-12">
+        <section className="grid gap-6 lg:gap-10 py-10" id="projects">
+          <div className="flex flex-col gap-2 mb-32">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
               Projects
             </h2>
@@ -244,29 +270,33 @@ export function RootUI() {
                       />
                     </CardContent>
                     <CardFooter>
-                      <Link
-                        className="text-sm font-medium hover:underline mr-4"
-                        href="#"
+                      <a
+                        target="_blank"
+                        className="text-sm font-medium hover:underline mr-4 flex items-center"
+                        href={project.live}
                       >
+                        <AppWindow className="mr-2" />
                         View Live
-                      </Link>
-                      <Link
-                        className="text-sm font-medium hover:underline"
-                        href="#"
+                      </a>
+                      <a
+                        target="_blank"
+                        className="text-sm font-medium hover:underline flex items-center"
+                        href={project.code}
                       >
+                        <Code2 className="mr-2" />
                         Source Code
-                      </Link>
+                      </a>
                     </CardFooter>
                   </Card>
                 );
               })}
             </div>
           </div>
-          <div className="flex flex-col border-2 rounded-xl gap-2 p-10 mb-12 w-1/2 mx-auto shadow-2xl ">
+          <div className="flex flex-col gap-2 w-1/2 mx-auto " id="contact-me">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center mb-5">
               Contact Me
             </h2>
-            <div className="grid gap-2">
+            <div className="grid gap-2 border-2 rounded-xl shadow-2xl p-10">
               <form className="grid gap-4 mt-5">
                 <div className="grid gap-2">
                   <Label className="text-base" htmlFor="name">
@@ -286,7 +316,10 @@ export function RootUI() {
                   </Label>
                   <Textarea id="message" required />
                 </div>
-                <Button type="submit">Submit</Button>
+                <Button type="submit">
+                  Submit
+                  <SendHorizontal className="ml-2" />
+                </Button>
               </form>
             </div>
           </div>
@@ -297,15 +330,27 @@ export function RootUI() {
           © {new Date().getFullYear()} Adhham Safwan. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          <a
+            className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
+            href="#"
+          >
+            <Twitter />
             Twitter
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          </a>
+          <a
+            className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
+            href="#"
+          >
+            <Github />
             GitHub
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          </a>
+          <a
+            className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
+            href="#"
+          >
+            <Linkedin />
             LinkedIn
-          </Link>
+          </a>
         </nav>
       </footer>
     </div>
