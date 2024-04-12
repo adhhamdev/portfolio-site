@@ -12,8 +12,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -100,6 +98,30 @@ export function RootUI() {
     },
   ];
 
+  const projects = [
+    {
+      title: "Pictoria",
+      description: "A place to explore high quality images from Unsplash",
+      image: "/pictoria.png",
+      live: "https://pictoria-adhham.vercel.app",
+      code: ""
+    },
+    {
+      title: "Evently",
+      description: "A Platform to host, connect and celebrate your Events.",
+      image: "/evently.png",
+      live: "https://evently-adhham.vercel.app",
+      code: ""
+    },
+    {
+      title: "Startup Directory",
+      description: "A collection of Startups to browse and lookup for.",
+      image: "/startup-directory.png",
+      live: "https://startup-directory.vercel.app",
+      code: ""
+    },
+  ]
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -157,12 +179,12 @@ export function RootUI() {
             </Link>
           </div>
         </section>
-        <section className="grid gap-6 lg:gap-10 space-y-44 justify-center">
-          <div className="flex flex-col gap-2 items-center text-justify">
-            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl py-5">
+        <section className="grid gap-6 lg:gap-10 justify-center">
+          <div className="flex flex-col gap-2 items-center text-justify mb-12">
+            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl">
               About Me
             </h2>
-            <p className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400">
+            <p className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400 p-8">
               Recent Computer Science Graduate with a passion for developing
               scalable web applications and working across the full stack.
               I&apos;m looking to join forces with any size organization to grow
@@ -170,7 +192,7 @@ export function RootUI() {
               products that are offered by the Company.
             </p>
           </div>
-          <div className="flex flex-col gap-6 py-10">
+          <div className="flex flex-col gap-6 mb-12">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
               Skills
             </h2>
@@ -200,107 +222,52 @@ export function RootUI() {
           </div>
         </section>
         <section className="grid gap-6 lg:gap-10 py-10">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 mb-12">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
               Projects
             </h2>
             <div className="flex gap-2 flex-wrap justify-evenly py-5 cols">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base  min-w-80">Beautiful Website</CardTitle>
-                  <CardDescription>
-                    A stunning website with beautiful animations.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    alt="Project"
-                    className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    width="300"
-                  />
-                </CardContent>
-                <CardFooter>
-                  <Link className="text-sm underline" href="#">
-                    View Project
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base">Beautiful Website</CardTitle>
-                  <CardDescription>
-                    A stunning website with beautiful animations.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    alt="Project"
-                    className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    width="300"
-                  />
-                </CardContent>
-                <CardFooter>
-                  <Link className="text-sm underline" href="#">
-                    View Project
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base  min-w-80">Beautiful Website</CardTitle>
-                  <CardDescription>
-                    A stunning website with beautiful animations.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    alt="Project"
-                    className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    width="300"
-                  />
-                </CardContent>
-                <CardFooter>
-                  <Link className="text-sm underline" href="#">
-                    View Project
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-base">Beautiful Website</CardTitle>
-                  <CardDescription>
-                    A stunning website with beautiful animations.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    alt="Project"
-                    className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                    height="150"
-                    src="/placeholder.svg"
-                    width="300"
-                  />
-                </CardContent>
-                <CardFooter>
-                  <Link className="text-sm underline" href="#">
-                    View Project
-                  </Link>
-                </CardFooter>
-              </Card>
+              {projects.map((project) => {
+                return (
+                  <Card key={project.title} className="w-80 shadow-lg">
+                    <CardHeader>
+                      <CardTitle>{project.title}</CardTitle>
+                      <CardDescription>{project.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        width={320}
+                        height={240}
+                        className="rounded hover:shadow-2xl transition-shadow"
+                      />
+                    </CardContent>
+                    <CardFooter>
+                      <Link
+                        className="text-sm font-medium hover:underline mr-4"
+                        href="#"
+                      >
+                        View Live
+                      </Link>
+                      <Link
+                        className="text-sm font-medium hover:underline"
+                        href="#"
+                      >
+                        Source Code
+                      </Link>
+                    </CardFooter>
+                  </Card>
+                );
+              })}
             </div>
           </div>
-          <div className="flex flex-col gap-2 py-10">
-            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl">
+          <div className="flex flex-col border-2 rounded-xl gap-2 p-10 mb-12 w-1/2 mx-auto shadow-2xl ">
+            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center mb-5">
               Contact Me
             </h2>
             <div className="grid gap-2">
-              <form className="grid gap-4">
+              <form className="grid gap-4 mt-5">
                 <div className="grid gap-2">
                   <Label className="text-base" htmlFor="name">
                     Name
@@ -327,7 +294,7 @@ export function RootUI() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          © 2024 Jane Doe. All rights reserved.
+          © {new Date().getFullYear()} Adhham Safwan. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:underline underline-offset-4" href="#">
