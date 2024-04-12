@@ -124,14 +124,14 @@ export function RootUI() {
       description: "A Platform to host, connect and celebrate your Events.",
       image: "/evently.png",
       live: "https://evently-adhham.vercel.app",
-      code: "https://github.com/adhhamdev/startup-directory",
+      code: "https://github.com/adhhamdev/evently",
     },
     {
       title: "Startup Directory",
       description: "A collection of Startups to browse and lookup for.",
       image: "/startup-directory.png",
       live: "https://startup-directory.vercel.app",
-      code: "https://github.com/adhhamdev/evently",
+      code: "https://github.com/adhhamdev/startup-directory",
     },
   ];
 
@@ -174,7 +174,10 @@ export function RootUI() {
         </nav>
       </header>
       <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 py-6">
-        <section className="flex flex-col items-center justify-center space-y-2 text-center h-96" id="intro">
+        <section
+          className="flex flex-col items-center justify-center space-y-2 text-center h-96"
+          id="intro"
+        >
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">
               Adhham Safwan
@@ -331,22 +334,25 @@ export function RootUI() {
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <a
+            target="_blank"
             className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
-            href="#"
+            href="https://twitter.com/AdhhamDev"
           >
             <Twitter />
             Twitter
           </a>
           <a
+            target="_blank"
             className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
-            href="#"
+            href="https://github.com/adhhamdev"
           >
             <Github />
             GitHub
           </a>
           <a
+          target="_blank"
             className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
-            href="#"
+            href="https://www.linkedin.com/in/adhham/"
           >
             <Linkedin />
             LinkedIn
