@@ -199,6 +199,7 @@ export function RootUI() {
               Contact Me
             </a>
             <a
+              target="_blank"
               className="inline-flex h-9 items-center justify-center rounded-md border border-slate-200  bg-white shadow-sm px-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
               href="https://drive.google.com/file/d/1nJJXINjPP8KVjHibXZc8XoSSXjwFheDI"
               download
@@ -214,11 +215,11 @@ export function RootUI() {
               About Me
             </h2>
             <p className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400 p-8">
-              Highly motivated BTEC HND in Software Engineering student and self-taught Full Stack Developer with a
-              strong focus on building websites with exceptional SEO and
-              accessibility. Skilled in creating visually attractive and
-              high-performance websites. Seeking opportunities to contribute my
-              expertise and creativity.
+              Highly motivated BTEC HND in Software Engineering student and
+              self-taught Full Stack Developer with a strong focus on building
+              websites with exceptional SEO and accessibility. Skilled in
+              creating visually attractive and high-performance websites.
+              Seeking opportunities to contribute my expertise and creativity.
             </p>
           </div>
           <div className="flex flex-col gap-6 mb-12" id="skills">
