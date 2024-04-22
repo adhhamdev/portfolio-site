@@ -300,7 +300,7 @@ export function RootUI() {
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center mb-5">
               Contact Me
             </h2>
-            <div className="grid gap-2 border-2 rounded-xl shadow-2xl p-10">
+            <div className="grid gap-2 border-2 rounded-xl hover:shadow-2xl transition-shadow p-10">
               <form className="grid gap-4 mt-5">
                 <div className="grid gap-2">
                   <Label className="text-base" htmlFor="name">
