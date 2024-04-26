@@ -25,6 +25,7 @@ import {
   Folders,
   CodeSquare,
   Contact,
+  GraduationCap,
   FileText,
   AppWindow,
   Code2,
@@ -139,7 +140,7 @@ export function RootUI() {
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <a className="flex items-center justify-center" href="#">
-          <MountainIcon className="h-6 w-6" />
+          <Image src="/profile.jpg" alt="Profile picture" width={40} height={40} className="rounded-full" />
           <span className="sr-only">Adhham Safwan</span>
         </a>
         <nav className="ml-auto flex gap-4 sm:gap-8">
@@ -149,6 +150,13 @@ export function RootUI() {
           >
             <User className="mr-2" />
             Intro
+          </a>
+          <a
+            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+            href="#edu"
+          >
+            <GraduationCap className="mr-2" />
+            Education
           </a>
           <a
             className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
@@ -370,24 +378,5 @@ export function RootUI() {
         </nav>
       </footer>
     </div>
-  );
-}
-
-function MountainIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
   );
 }
