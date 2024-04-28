@@ -140,7 +140,13 @@ export function RootUI() {
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <a className="flex items-center justify-center" href="#">
-          <Image src="/profile.jpg" alt="Profile picture" width={40} height={40} className="rounded-full" />
+          <Image
+            src="/profile.jpg"
+            alt="Profile picture"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
           <span className="sr-only">Adhham Safwan</span>
         </a>
         <nav className="ml-auto flex gap-4 sm:gap-8">
@@ -153,7 +159,7 @@ export function RootUI() {
           </a>
           <a
             className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
-            href="#edu"
+            href="#education"
           >
             <GraduationCap className="mr-2" />
             Education
@@ -194,8 +200,8 @@ export function RootUI() {
               Full Stack Web Developer
             </p>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              I build beautiful and responsive websites. Welcome to my
-              portfolio.
+              Bringing ideas to life through code Crafting digital experiences
+              that are both beautiful and functional.
             </p>
           </div>
           <div className="flex items-center justify-center space-x-4 pt-5">
@@ -228,11 +234,165 @@ export function RootUI() {
               websites with exceptional SEO and accessibility. Skilled in
               creating visually attractive and high-performance websites.
               Seeking opportunities to contribute my expertise and creativity.
+              <br />
+              I have a passion for learning new technologies and building
+              beautiful and functional websites. I am a firm believer in the
+              importance of good design and user experience. I am always looking
+              for new challenges and opportunities to grow.
+              <br />I am currently looking for a challenging and exciting role
+              in a fast-paced and growing company.
             </p>
           </div>
+          <div className="w-full md:py-24">
+            <div className="container px-4 md:px-6">
+              <div className="mx-auto max-w-3xl space-y-4 text-center">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl">
+                  My Education Journey
+                </h2>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Explore the milestones that have shaped my academic and
+                  professional development.
+                </p>
+              </div>
+              <div className="mx-auto mt-12 max-w-3xl">
+                <ol className="relative border-l border-gray-200 dark:border-gray-700">
+                  <li className="mb-10 ml-4">
+                    <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
+                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                      BTEC Higher National Diploma in Software Engineering
+                      <span className="bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300 ml-3">
+                        2024 - 2025 (expected)
+                      </span>
+                    </h3>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                      ESoft Metro Campus
+                    </p>
+                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                      <ul className="list-disc list-inside marker:text-sky-500">
+                        <li>
+                          Presently, Studying core modules including Object
+                          Oriented Programming, Web Application Development,
+                          Mobile Application Development, Database Design &
+                          Development.
+                        </li>
+                        <li>
+                          Developing skills in languages like, .NET, C#,
+                          JavaScript, SQL.
+                        </li>
+                        <li>
+                          Working on group and individual projects to build
+                          robust and scalable applications.
+                        </li>
+                      </ul>
+                    </p>
+                  </li>
+                  <li className="mb-10 ml-4">
+                    <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
+                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                      BTEC Diploma in Information Technology
+                      <span className="bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300 ml-3">
+                        2023
+                      </span>
+                    </h3>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                      ESoft Metro Campus
+                    </p>
+                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                      <ul className="list-disc list-inside marker:text-sky-500">
+                        <li>
+                          Focused on fundamentals of Computing, Programming and
+                          Web.
+                        </li>
+                        <li>
+                          Developed my first Software Application in .NET and C#
+                          using Visual Studio.
+                        </li>
+                      </ul>
+                    </p>
+                  </li>
+                  <li className="mb-10 ml-4">
+                    <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
+                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                      O Levels in Math, Physics, Chemistry, Biology, English &
+                      Computer Science
+                      <span className="bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300 ml-3">
+                        2022
+                      </span>
+                    </h3>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                      Golden Gate International School
+                    </p>
+                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                      <ul className="list-disc list-inside marker:text-sky-500">
+                        <li>
+                          Achieved A in Computer Science, B in English &
+                          Biology, C in Physics, and E in Chemistry.
+                        </li>
+                        <li>
+                          Developed strong analytical and problem solving
+                          skills.
+                        </li>
+                      </ul>
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          {/* <div className="gap-6 mb-12" id="education">
+            <div className="flex flex-col gap-6 mb-12">
+              <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
+                Education
+              </h2>
+              <div className="grid gap-4 lg:gap-8">
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-xl font-semibold">
+                    BTEC Higher National Diploma in Software Engineering
+                  </h3>
+                  <p className="text-base text-gray-500 dark:text-gray-400">
+                    London South Bank University | 2021 - Present
+                  </p>
+                  <ul className="list-disc list-inside marker:text-sky-500">
+                    <li>
+                      Studying core modules including Object Oriented
+                      Programming, Web Application Development, Mobile
+                      Application Development, Database Design & Development.
+                    </li>
+                    <li>
+                      Developing skills in languages like Java, C#, JavaScript,
+                      PHP, SQL.
+                    </li>
+                    <li>
+                      Working on group and individual projects to build robust
+                      and scalable applications.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-xl font-semibold">
+                    A Levels in Math, Physics, Chemistry
+                  </h3>
+                  <p className="text-base text-gray-500 dark:text-gray-400">
+                    ABC College | 2019 - 2021
+                  </p>
+                  <ul className="list-disc list-inside marker:text-sky-500">
+                    <li>Achieved A in Math, B in Physics, C in Chemistry.</li>
+                    <li>
+                      Developed strong analytical and problem solving skills.
+                    </li>
+                    <li>
+                      Explored advanced concepts in calculus, mechanics,
+                      electromagnetism, organic chemistry.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> */}
           <div className="flex flex-col gap-6 mb-12" id="skills">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
-              Skills
+              Development Skills
             </h2>
             <Carousel
               plugins={[Autoplay({ delay: 2000, stopOnInteraction: false })]}
@@ -262,7 +422,7 @@ export function RootUI() {
         <section className="grid gap-6 lg:gap-10 py-10" id="projects">
           <div className="flex flex-col gap-2 mb-32">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
-              Projects
+              Personal Projects
             </h2>
             <div className="flex gap-2 flex-wrap justify-evenly py-5 cols">
               {projects.map((project) => {
@@ -278,7 +438,7 @@ export function RootUI() {
                         alt={project.title}
                         width={320}
                         height={240}
-                        className="rounded hover:shadow-2xl transition-shadow"
+                        className="rounded hover:shadow-none shadow-2xl transition-shadow"
                       />
                     </CardContent>
                     <CardFooter>
@@ -309,6 +469,10 @@ export function RootUI() {
               Contact Me
             </h2>
             <div className="grid gap-2 border-2 rounded-xl hover:shadow-2xl transition-shadow p-10">
+              <h2 className="tracking-tighter text-2xl text-center mb-5">
+                I appreciate you taking the time to provide feedback. Your
+                thoughts help me improve my work!
+              </h2>
               <form className="grid gap-4 mt-5">
                 <div className="grid gap-2">
                   <Label className="text-base" htmlFor="name">

@@ -1,0 +1,9 @@
+{
+    "workbench.editor.untitled.labelFormat": "name",
+    "workbench.editor.customLabels.patterns": {
+        "**/app/**/page.js": "${dirname} - Page",
+        "**/app/**/layout.js": "${dirname} - Layout",
+        "**/components/**/*.jsx": "${filename} - Component",
+        "**/components/**/*.js": "${filename} - Component"
+    }
+}
