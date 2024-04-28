@@ -267,7 +267,7 @@ export function RootUI() {
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                       ESoft Metro Campus
                     </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    <div className="text-base font-normal text-gray-500 dark:text-gray-400">
                       <ul className="list-disc list-inside marker:text-sky-500">
                         <li>
                           Presently, Studying core modules including Object
@@ -284,7 +284,7 @@ export function RootUI() {
                           robust and scalable applications.
                         </li>
                       </ul>
-                    </p>
+                    </div>
                   </li>
                   <li className="mb-10 ml-4">
                     <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
@@ -297,7 +297,7 @@ export function RootUI() {
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                       ESoft Metro Campus
                     </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    <div className="text-base font-normal text-gray-500 dark:text-gray-400">
                       <ul className="list-disc list-inside marker:text-sky-500">
                         <li>
                           Focused on fundamentals of Computing, Programming and
@@ -308,7 +308,7 @@ export function RootUI() {
                           using Visual Studio.
                         </li>
                       </ul>
-                    </p>
+                    </div>
                   </li>
                   <li className="mb-10 ml-4">
                     <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
@@ -322,7 +322,7 @@ export function RootUI() {
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                       Golden Gate International School
                     </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    <div className="text-base font-normal text-gray-500 dark:text-gray-400">
                       <ul className="list-disc list-inside marker:text-sky-500">
                         <li>
                           Achieved A in Computer Science, B in English &
@@ -333,7 +333,7 @@ export function RootUI() {
                           skills.
                         </li>
                       </ul>
-                    </p>
+                    </div>
                   </li>
                 </ol>
               </div>
