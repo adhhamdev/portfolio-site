@@ -417,19 +417,19 @@ export function RootUI() {
 
           <div className="flex flex-col md:flex-row md:gap-8">
             <div className="basis-2/3 mx-auto md:mx-0">
-              <h2 className="text-4xl font-bold tracking-tighter md:text-3xl text-center mb-5">
+              <h2 className="text-5xl font-bold tracking-tighter md:text-3xl text-center mb-5">
                 Contact Me
               </h2>
 
               <div className="p-6 md:p-10 border border-gray-100 rounded-lg shadow-md">
-                <h3 className="text-xl font-medium text-center mb-4">
+                <h3 className="text-3xl font-medium text-center mb-4">
                   I appreciate you taking the time to provide feedback. Your
                   thoughts help me improve my work!
                 </h3>
 
                 <form className="grid gap-4">
                   <div className="grid gap-2">
-                    <Label className="text-2xl md:text-base" htmlFor="name">
+                    <Label className="text-4xl md:text-base" htmlFor="name">
                       Name
                     </Label>
                     <Input
@@ -437,12 +437,12 @@ export function RootUI() {
                       type="text"
                       required
                       placeholder="Enter your name..."
-                      className="text-2xl md:text-base h-14 md:h-auto"
+                      className="text-4xl md:text-base h-14 md:h-auto"
                     />
                   </div>
 
                   <div className="grid gap-2">
-                    <Label className="text-2xl md:text-base" htmlFor="email">
+                    <Label className="text-4xl md:text-base" htmlFor="email">
                       Email
                     </Label>
                     <Input
@@ -450,23 +450,23 @@ export function RootUI() {
                       type="email"
                       required
                       placeholder="Enter your email..."
-                      className="text-2xl md:text-base h-14 md:h-auto"
+                      className="text-4xl md:text-base h-14 md:h-auto"
                     />
                   </div>
 
                   <div className="grid gap-2">
-                    <Label className="text-2xl md:text-base" htmlFor="message">
+                    <Label className="text-4xl md:text-base" htmlFor="message">
                       Message
                     </Label>
                     <Textarea
                       id="message"
                       required
                       placeholder="Enter your message..."
-                      className="text-2xl md:text-base"
+                      className="text-4xl md:text-base"
                     ></Textarea>
                   </div>
 
-                  <Button type="submit" className="mt-4 justify-center text-2xl md:text-base h-14 md:h-auto">
+                  <Button type="submit" className="mt-4 justify-center text-4xl md:text-base h-20 md:h-auto">
                     Submit
                     <SendHorizontal className="ml-2" />
                   </Button>
