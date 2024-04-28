@@ -187,7 +187,7 @@ export function RootUI() {
           </a>
         </nav>
       </header>
-      <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 py-6">
+      <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 pt-6">
         <section
           className="flex flex-col items-center justify-center space-y-2 text-center h-96"
           id="intro"
@@ -370,14 +370,14 @@ export function RootUI() {
         </section>
         <section className="grid gap-6 lg:gap-10 mt-20" id="projects">
           <div className="flex flex-col gap-2 mb-32">
-            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
+            <h2 className="text-2xl font-bold tracking-tighter md:text-3xl text-center py-5">
               Personal Projects
             </h2>
 
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {projects.map((project) => {
                 return (
-                  <Card key={project.title} className=" w-full md:80 shadow-lg">
+                  <Card key={project.title} className="w-full md:80 shadow-lg">
                     <CardHeader>
                       <CardTitle>{project.title}</CardTitle>
                       <CardDescription>{project.description}</CardDescription>
@@ -415,21 +415,21 @@ export function RootUI() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row md:gap-8">
-            <div className="basis-2/3 mx-auto md:mx-0">
-              <h2 className="text-5xl font-bold tracking-tighter md:text-3xl text-center mb-5">
+          <div className="flex flex-col sm:flex-row sm:gap-8 justify-center">
+            <div className="basis-2/3 mx-auto sm:mx-0">
+              <h2 className="text-5xl font-bold tracking-tighter sm:text-3xl text-center mb-5">
                 Contact Me
               </h2>
 
-              <div className="p-6 md:p-10 border border-gray-100 rounded-lg shadow-md">
-                <h3 className="text-3xl font-medium text-center mb-4">
+              <div className="p-10 sm:p-10 border border-gray-100 rounded-lg sm:shadow-md sm:hover:shadow-2xl transition-shadow">
+                <h3 className="text-3xl sm:text-xl font-medium text-center mb-4">
                   I appreciate you taking the time to provide feedback. Your
                   thoughts help me improve my work!
                 </h3>
 
                 <form className="grid gap-4">
-                  <div className="grid gap-2 my-2 md:my-auto">
-                    <Label className="text-4xl md:text-base" htmlFor="name">
+                  <div className="grid gap-2 my-4 sm:my-auto">
+                    <Label className="text-4xl sm:text-base" htmlFor="name">
                       Name
                     </Label>
                     <Input
@@ -437,12 +437,12 @@ export function RootUI() {
                       type="text"
                       required
                       placeholder="Enter your name..."
-                      className="text-3xl md:text-base h-20 md:h-auto"
+                      className="text-3xl sm:text-base h-20 sm:h-auto"
                     />
                   </div>
 
-                  <div className="grid gap-2 my-2 md:my-auto">
-                    <Label className="text-4xl md:text-base" htmlFor="email">
+                  <div className="grid gap-2 my-4 sm:my-auto">
+                    <Label className="text-4xl sm:text-base" htmlFor="email">
                       Email
                     </Label>
                     <Input
@@ -450,23 +450,23 @@ export function RootUI() {
                       type="email"
                       required
                       placeholder="Enter your email..."
-                      className="text-3xl md:text-base h-20 md:h-auto"
+                      className="text-3xl sm:text-base h-20 sm:h-auto"
                     />
                   </div>
 
-                  <div className="grid gap-2 my-2 md:my-auto">
-                    <Label className="text-4xl md:text-base" htmlFor="message">
+                  <div className="grid gap-2 my-4 sm:my-auto">
+                    <Label className="text-4xl sm:text-base" htmlFor="message">
                       Message
                     </Label>
                     <Textarea
                       id="message"
                       required
                       placeholder="Enter your message..."
-                      className="text-3xl md:text-base h-40 md:h-auto"
+                      className="text-3xl sm:text-base h-40 sm:h-auto"
                     ></Textarea>
                   </div>
 
-                  <Button type="submit" className="mt-4 justify-center text-4xl md:text-base h-20 md:h-auto rounded-2xl">
+                  <Button type="submit" className="mt-4 justify-center text-4xl sm:text-base h-20 sm:h-auto rounded-2xl">
                     Submit
                     <SendHorizontal className="ml-2" />
                   </Button>
@@ -475,38 +475,38 @@ export function RootUI() {
             </div>
           </div>
         </section>
-      </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 dark:text-gray-400">
-          © {new Date().getFullYear()} Adhham Safwan. All rights reserved.
+      <footer className="flex flex-col gap-8 sm:flex-row py-6 w-full shrink-0 items-center sm:px-6 border-t">
+        <p className="text-2xl sm:text-base text-gray-500 dark:text-gray-400">
+          &copy; {new Date().getFullYear()} Adhham Safwan. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <a
             target="_blank"
-            className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
+            className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
             href="https://twitter.com/AdhhamDev"
           >
-            <Twitter />
+            <Twitter className="w-10 h-10 sm:w-6" />
             Twitter
           </a>
           <a
             target="_blank"
-            className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
+            className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
             href="https://github.com/adhhamdev"
           >
-            <Github />
+            <Github className="w-10 h-10 sm:w-6" />
             GitHub
           </a>
           <a
             target="_blank"
-            className="text-xs hover:underline underline-offset-4 flex flex-col items-center"
+            className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
             href="https://www.linkedin.com/in/adhham/"
           >
-            <Linkedin />
+            <Linkedin className="w-10 h-10 sm:w-6" />
             LinkedIn
           </a>
         </nav>
       </footer>
+      </main>
     </div>
   );
 }
