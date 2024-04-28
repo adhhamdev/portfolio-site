@@ -373,10 +373,11 @@ export function RootUI() {
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
               Personal Projects
             </h2>
-            <div className="flex gap-2 flex-wrap justify-evenly py-5 cols">
+
+            <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {projects.map((project) => {
                 return (
-                  <Card key={project.title} className="w-80 shadow-lg">
+                  <Card key={project.title} className=" w-full md:80 shadow-lg">
                     <CardHeader>
                       <CardTitle>{project.title}</CardTitle>
                       <CardDescription>{project.description}</CardDescription>
@@ -413,48 +414,64 @@ export function RootUI() {
               })}
             </div>
           </div>
-          <div className="flex flex-col gap-2 w-1/2 mx-auto" id="contact-me">
-            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center mb-5">
-              Contact Me
-            </h2>
-            <div className="grid gap-2 border-2 rounded-xl hover:shadow-2xl transition-shadow p-10">
-              <h2 className="tracking-tighter text-2xl text-center mb-5">
-                I appreciate you taking the time to provide feedback. Your
-                thoughts help me improve my work!
+
+          <div className="flex flex-col md:flex-row md:gap-8">
+            <div className="basis-2/3 mx-auto md:mx-0">
+              <h2 className="text-4xl font-bold tracking-tighter md:text-3xl text-center mb-5">
+                Contact Me
               </h2>
-              <form className="grid gap-4 mt-5">
-                <div className="grid gap-2">
-                  <Label className="text-base" htmlFor="name">
-                    Name
-                  </Label>
-                  <Input id="name" required placeholder="Enter your name..." />
-                </div>
-                <div className="grid gap-2">
-                  <Label className="text-base" htmlFor="email">
-                    Email
-                  </Label>
-                  <Input
-                    id="email"
-                    required
-                    type="email"
-                    placeholder="Enter your email..."
-                  />
-                </div>
-                <div className="grid gap-2">
-                  <Label className="text-base" htmlFor="message">
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    required
-                    placeholder="Enter your message..."
-                  />
-                </div>
-                <Button type="submit">
-                  Submit
-                  <SendHorizontal className="ml-2" />
-                </Button>
-              </form>
+
+              <div className="p-6 md:p-10 border border-gray-100 rounded-lg shadow-md">
+                <h3 className="text-xl font-medium text-center mb-4">
+                  I appreciate you taking the time to provide feedback. Your
+                  thoughts help me improve my work!
+                </h3>
+
+                <form className="grid gap-4">
+                  <div className="grid gap-2">
+                    <Label className="text-2xl md:text-base" htmlFor="name">
+                      Name
+                    </Label>
+                    <Input
+                      id="name"
+                      type="text"
+                      required
+                      placeholder="Enter your name..."
+                      className="text-2xl md:text-base h-14 md:h-auto"
+                    />
+                  </div>
+
+                  <div className="grid gap-2">
+                    <Label className="text-2xl md:text-base" htmlFor="email">
+                      Email
+                    </Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      required
+                      placeholder="Enter your email..."
+                      className="text-2xl md:text-base h-14 md:h-auto"
+                    />
+                  </div>
+
+                  <div className="grid gap-2">
+                    <Label className="text-2xl md:text-base" htmlFor="message">
+                      Message
+                    </Label>
+                    <Textarea
+                      id="message"
+                      required
+                      placeholder="Enter your message..."
+                      className="text-2xl md:text-base"
+                    ></Textarea>
+                  </div>
+
+                  <Button type="submit" className="mt-4 justify-center text-2xl md:text-base h-14 md:h-auto">
+                    Submit
+                    <SendHorizontal className="ml-2" />
+                  </Button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
