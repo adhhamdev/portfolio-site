@@ -243,9 +243,9 @@ export function RootUI() {
               in a fast-paced and growing company.
             </p>
           </div>
-          <div className="w-full md:py-24">
+          <div className="w-full md:mt-20" id="education">
             <div className="container px-4 md:px-6">
-              <div className="mx-auto max-w-3xl space-y-4 text-center">
+              <div className="mx-auto max-w-3xl space-y-4 my-10 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl">
                   My Education Journey
                 </h2>
@@ -339,58 +339,7 @@ export function RootUI() {
               </div>
             </div>
           </div>
-          {/* <div className="gap-6 mb-12" id="education">
-            <div className="flex flex-col gap-6 mb-12">
-              <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
-                Education
-              </h2>
-              <div className="grid gap-4 lg:gap-8">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold">
-                    BTEC Higher National Diploma in Software Engineering
-                  </h3>
-                  <p className="text-base text-gray-500 dark:text-gray-400">
-                    London South Bank University | 2021 - Present
-                  </p>
-                  <ul className="list-disc list-inside marker:text-sky-500">
-                    <li>
-                      Studying core modules including Object Oriented
-                      Programming, Web Application Development, Mobile
-                      Application Development, Database Design & Development.
-                    </li>
-                    <li>
-                      Developing skills in languages like Java, C#, JavaScript,
-                      PHP, SQL.
-                    </li>
-                    <li>
-                      Working on group and individual projects to build robust
-                      and scalable applications.
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-semibold">
-                    A Levels in Math, Physics, Chemistry
-                  </h3>
-                  <p className="text-base text-gray-500 dark:text-gray-400">
-                    ABC College | 2019 - 2021
-                  </p>
-                  <ul className="list-disc list-inside marker:text-sky-500">
-                    <li>Achieved A in Math, B in Physics, C in Chemistry.</li>
-                    <li>
-                      Developed strong analytical and problem solving skills.
-                    </li>
-                    <li>
-                      Explored advanced concepts in calculus, mechanics,
-                      electromagnetism, organic chemistry.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          <div className="flex flex-col gap-6 mb-12" id="skills">
+          <div className="flex flex-col gap-6 my-28" id="skills">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
               Development Skills
             </h2>
@@ -419,7 +368,7 @@ export function RootUI() {
             </Carousel>
           </div>
         </section>
-        <section className="grid gap-6 lg:gap-10 py-10" id="projects">
+        <section className="grid gap-6 lg:gap-10 mt-20" id="projects">
           <div className="flex flex-col gap-2 mb-32">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
               Personal Projects
@@ -464,7 +413,7 @@ export function RootUI() {
               })}
             </div>
           </div>
-          <div className="flex flex-col gap-2 w-1/2 mx-auto " id="contact-me">
+          <div className="flex flex-col gap-2 w-1/2 mx-auto" id="contact-me">
             <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center mb-5">
               Contact Me
             </h2>
