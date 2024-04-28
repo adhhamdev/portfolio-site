@@ -139,7 +139,7 @@ export function RootUI() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <a className="flex items-center justify-center" href="#">
+        <a className="flex items-center justify-center w-10 h-10" href="#">
           <Image
             src="/profile.jpg"
             alt="Profile picture"
@@ -244,7 +244,7 @@ export function RootUI() {
             </p>
           </div>
           <div className="w-full md:mt-20" id="education">
-            <div className="container px-4 md:px-6">
+            <div className=" px-4 md:px-6">
               <div className="mx-auto max-w-3xl space-y-4 my-10 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl">
                   My Education Journey
