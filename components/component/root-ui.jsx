@@ -428,7 +428,7 @@ export function RootUI() {
                 </h3>
 
                 <form className="grid gap-4">
-                  <div className="grid gap-2">
+                  <div className="grid gap-2 my-2 md:my-auto">
                     <Label className="text-4xl md:text-base" htmlFor="name">
                       Name
                     </Label>
@@ -437,11 +437,11 @@ export function RootUI() {
                       type="text"
                       required
                       placeholder="Enter your name..."
-                      className="text-4xl md:text-base h-14 md:h-auto"
+                      className="text-3xl md:text-base h-20 md:h-auto"
                     />
                   </div>
 
-                  <div className="grid gap-2">
+                  <div className="grid gap-2 my-2 md:my-auto">
                     <Label className="text-4xl md:text-base" htmlFor="email">
                       Email
                     </Label>
@@ -450,11 +450,11 @@ export function RootUI() {
                       type="email"
                       required
                       placeholder="Enter your email..."
-                      className="text-4xl md:text-base h-14 md:h-auto"
+                      className="text-3xl md:text-base h-20 md:h-auto"
                     />
                   </div>
 
-                  <div className="grid gap-2">
+                  <div className="grid gap-2 my-2 md:my-auto">
                     <Label className="text-4xl md:text-base" htmlFor="message">
                       Message
                     </Label>
@@ -462,11 +462,11 @@ export function RootUI() {
                       id="message"
                       required
                       placeholder="Enter your message..."
-                      className="text-4xl md:text-base"
+                      className="text-3xl md:text-base h-40 md:h-auto"
                     ></Textarea>
                   </div>
 
-                  <Button type="submit" className="mt-4 justify-center text-4xl md:text-base h-20 md:h-auto">
+                  <Button type="submit" className="mt-4 justify-center text-4xl md:text-base h-20 md:h-auto rounded-2xl">
                     Submit
                     <SendHorizontal className="ml-2" />
                   </Button>
