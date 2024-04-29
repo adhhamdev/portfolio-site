@@ -193,42 +193,42 @@ export function RootUI() {
           id="intro"
         >
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">
+            <h1 className="text-5xl font-bold tracking-tighter lg:text-6xl">
               Adhham Safwan
             </h1>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-bold">
+            <p className="text-xl sm:text-base max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-bold">
               Full Stack Web Developer
             </p>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p className="text-2xl sm:text-base max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
               Bringing ideas to life through code Crafting digital experiences
               that are both beautiful and functional.
             </p>
           </div>
           <div className="flex items-center justify-center space-x-4 pt-5">
             <a
-              className="inline-flex h-9 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm px-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
+              className="text-3xl sm:text-sm inline-flex h-12 sm:h-9 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm px-4 font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
               href="#contact"
             >
-              <Contact className="mr-2" />
+              <Contact className="mr-2 size-9 sm:size-auto" />
               Contact Me
             </a>
             <a
               target="_blank"
-              className="inline-flex h-9 items-center justify-center rounded-md border border-slate-200  bg-white shadow-sm px-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
+              className="text-3xl sm:text-sm h-12 sm:h-9 inline-flex items-center justify-center rounded-md border border-slate-200  bg-white shadow-sm px-4 font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
               href="https://drive.google.com/file/d/1nJJXINjPP8KVjHibXZc8XoSSXjwFheDI"
               download
             >
-              <FileText className="mr-2" />
+              <FileText className="mr-2  size-9 sm:size-auto" />
               Resume
             </a>
           </div>
         </section>
         <section className="grid gap-6 lg:gap-10 justify-center">
           <div className="flex flex-col gap-2 items-center text-justify mb-12">
-            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl">
+            <h2 className="text-5xl font-bold tracking-tighter lg:text-3xl">
               About Me
             </h2>
-            <p className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400 p-8">
+            <p className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400 p-8 text-2xl sm:text-base">
               Highly motivated BTEC HND in Software Engineering student and
               self-taught Full Stack Developer with a strong focus on building
               websites with exceptional SEO and accessibility. Skilled in
@@ -246,10 +246,10 @@ export function RootUI() {
           <div className="w-full md:mt-20" id="education">
             <div className=" px-4 md:px-6">
               <div className="mx-auto max-w-3xl space-y-4 my-10 text-center">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl">
+                <h2 className="text-5xl font-bold tracking-tighter sm:text-3xl md:text-3xl">
                   My Education Journey
                 </h2>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 dark:text-gray-400 text-xl sm:text-xl">
                   Explore the milestones that have shaped my academic and
                   professional development.
                 </p>
@@ -258,7 +258,7 @@ export function RootUI() {
                 <ol className="relative border-l border-gray-200 dark:border-gray-700">
                   <li className="mb-10 ml-4">
                     <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    <h3 className="flex items-center mb-1 text-2xl sm:text-lg font-semibold text-gray-900 dark:text-white">
                       BTEC Higher National Diploma in Software Engineering
                       <span className="bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300 ml-3">
                         2024 - 2025 (expected)
@@ -268,7 +268,7 @@ export function RootUI() {
                       ESoft Metro Campus
                     </p>
                     <div className="text-base font-normal text-gray-500 dark:text-gray-400">
-                      <ul className="list-disc list-inside marker:text-sky-500">
+                      <ul className="list-disc list-inside marker:text-sky-500 text-xl sm:text-base">
                         <li>
                           Presently, Studying core modules including Object
                           Oriented Programming, Web Application Development,
@@ -288,7 +288,7 @@ export function RootUI() {
                   </li>
                   <li className="mb-10 ml-4">
                     <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    <h3 className="flex items-center mb-1 text-2xl sm:text-lg font-semibold text-gray-900 dark:text-white">
                       BTEC Diploma in Information Technology
                       <span className="bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300 ml-3">
                         2023
@@ -298,7 +298,7 @@ export function RootUI() {
                       ESoft Metro Campus
                     </p>
                     <div className="text-base font-normal text-gray-500 dark:text-gray-400">
-                      <ul className="list-disc list-inside marker:text-sky-500">
+                      <ul className="list-disc list-inside marker:text-sky-500 text-xl sm:text-base">
                         <li>
                           Focused on fundamentals of Computing, Programming and
                           Web.
@@ -312,7 +312,7 @@ export function RootUI() {
                   </li>
                   <li className="mb-10 ml-4">
                     <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 dark:ring-gray-900" />
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                    <h3 className="flex items-center mb-1 text-2xl sm:text-lg font-semibold text-gray-900 dark:text-white">
                       O Levels in Math, Physics, Chemistry, Biology, English &
                       Computer Science
                       <span className="bg-primary-100 text-primary-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300 ml-3">
@@ -323,7 +323,7 @@ export function RootUI() {
                       Golden Gate International School
                     </p>
                     <div className="text-base font-normal text-gray-500 dark:text-gray-400">
-                      <ul className="list-disc list-inside marker:text-sky-500">
+                      <ul className="list-disc list-inside marker:text-sky-500 text-xl sm:text-base">
                         <li>
                           Achieved A in Computer Science, B in English &
                           Biology, C in Physics, and E in Chemistry.
@@ -340,7 +340,7 @@ export function RootUI() {
             </div>
           </div>
           <div className="flex flex-col gap-6 my-28" id="skills">
-            <h2 className="text-2xl font-bold tracking-tighter lg:text-3xl text-center py-5">
+            <h2 className="text-5xl font-bold tracking-tighter sm:text-3xl text-center py-5">
               Development Skills
             </h2>
             <Carousel
@@ -377,7 +377,7 @@ export function RootUI() {
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {projects.map((project) => {
                 return (
-                  <Card key={project.title} className="w-full md:80 shadow-2xl space-y-4 sm:space-y-0 my-5 sm:my-auto">
+                  <Card key={project.title} className="w-full md:80 shadow-2xl space-y-4 sm:space-y-0 my-5 sm:my-auto p-4 sm:p-0">
                     <CardHeader>
                       <CardTitle className="text-5xl sm:text-2xl">{project.title}</CardTitle>
                       <CardDescription className="text-3xl sm:text-lg">{project.description}</CardDescription>
@@ -422,7 +422,7 @@ export function RootUI() {
               </h2>
 
               <div className="p-10 sm:p-10 border border-gray-100 rounded-lg sm:shadow-md sm:hover:shadow-2xl transition-shadow">
-                <h3 className="text-3xl sm:text-xl font-medium text-center mb-4">
+                <h3 className="text-3xl sm:text-xl text-gray-500 font-medium text-center mb-4">
                   I appreciate you taking the time to provide feedback. Your
                   thoughts help me improve my work!
                 </h3>
