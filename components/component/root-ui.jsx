@@ -180,7 +180,7 @@ export function RootUI() {
           </a>
           <a
             className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
-            href="#contact-me"
+            href="#contact"
           >
             <Contact className="mr-2" />
             Contact
@@ -207,7 +207,7 @@ export function RootUI() {
           <div className="flex items-center justify-center space-x-4 pt-5">
             <a
               className="inline-flex h-9 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm px-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
-              href="#contact-me"
+              href="#contact"
             >
               <Contact className="mr-2" />
               Contact Me
@@ -370,17 +370,17 @@ export function RootUI() {
         </section>
         <section className="grid gap-6 lg:gap-10 mt-20" id="projects">
           <div className="flex flex-col gap-2 mb-32">
-            <h2 className="text-2xl font-bold tracking-tighter md:text-3xl text-center py-5">
+            <h2 className="text-5xl font-bold tracking-tighter sm:text-3xl text-center py-5">
               Personal Projects
             </h2>
 
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {projects.map((project) => {
                 return (
-                  <Card key={project.title} className="w-full md:80 shadow-lg">
+                  <Card key={project.title} className="w-full md:80 shadow-2xl space-y-4 sm:space-y-0 my-5 sm:my-auto">
                     <CardHeader>
-                      <CardTitle>{project.title}</CardTitle>
-                      <CardDescription>{project.description}</CardDescription>
+                      <CardTitle className="text-5xl sm:text-2xl">{project.title}</CardTitle>
+                      <CardDescription className="text-3xl sm:text-lg">{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <Image
@@ -388,24 +388,24 @@ export function RootUI() {
                         alt={project.title}
                         width={320}
                         height={240}
-                        className="rounded hover:shadow-none shadow-2xl transition-shadow"
+                        className="rounded w-full sm:"
                       />
                     </CardContent>
                     <CardFooter>
                       <a
                         target="_blank"
-                        className="text-sm font-medium hover:underline mr-4 flex items-center"
+                        className="text-4xl sm:text-sm font-medium hover:underline mr-4 flex items-center"
                         href={project.live}
                       >
-                        <AppWindow className="mr-2" />
+                        <AppWindow className="mr-2 size-10 sm:size-6" />
                         View Live
                       </a>
                       <a
                         target="_blank"
-                        className="text-sm font-medium hover:underline flex items-center"
+                        className="text-4xl sm:text-sm font-medium hover:underline flex items-center"
                         href={project.code}
                       >
-                        <Code2 className="mr-2" />
+                        <Code2 className="mr-2 size-10 sm:size-6" />
                         Source Code
                       </a>
                     </CardFooter>
@@ -415,7 +415,7 @@ export function RootUI() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:gap-8 justify-center">
+          <div className="flex flex-col sm:flex-row sm:gap-8 justify-center pt-10" id="contact">
             <div className="basis-2/3 mx-auto sm:mx-0">
               <h2 className="text-5xl font-bold tracking-tighter sm:text-3xl text-center mb-5">
                 Contact Me
