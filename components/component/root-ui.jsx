@@ -138,56 +138,56 @@ export function RootUI() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <a className="flex items-center justify-center w-10 h-10" href="#">
-          <Image
-            src="/profile.jpg"
-            alt="Profile picture"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
-          <span className="sr-only">Adhham Safwan</span>
-        </a>
-        <nav className="ml-auto flex gap-4 sm:gap-8">
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
-            href="#intro"
-          >
-            <User className="mr-2" />
-            Intro
+      <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 pt-3">
+        <header className="px-4 lg:px-6 flex items-center justify-center">
+          <a className="flex items-center justify-center" href="#">
+            <Image
+              src="/profile.jpg"
+              alt="Profile picture"
+              width={40}
+              height={40}
+              className="rounded-full size-16 sm:size-auto"
+            />
+            <span className="sr-only">Adhham Safwan</span>
           </a>
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
-            href="#education"
-          >
-            <GraduationCap className="mr-2" />
-            Education
-          </a>
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
-            href="#skills"
-          >
-            <CodeSquare className="mr-2" />
-            Skills
-          </a>
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
-            href="#projects"
-          >
-            <Folders className="mr-2" />
-            Projects
-          </a>
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
-            href="#contact"
-          >
-            <Contact className="mr-2" />
-            Contact
-          </a>
-        </nav>
-      </header>
-      <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 pt-6">
+          <nav className="ml-auto gap-4 sm:gap-8 sm:flex hidden">
+            <a
+              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              href="#intro"
+            >
+              <User className="mr-2" />
+              Intro
+            </a>
+            <a
+              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              href="#education"
+            >
+              <GraduationCap className="mr-2" />
+              Education
+            </a>
+            <a
+              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              href="#skills"
+            >
+              <CodeSquare className="mr-2" />
+              Skills
+            </a>
+            <a
+              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              href="#projects"
+            >
+              <Folders className="mr-2" />
+              Projects
+            </a>
+            <a
+              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              href="#contact"
+            >
+              <Contact className="mr-2" />
+              Contact
+            </a>
+          </nav>
+        </header>
         <section
           className="flex flex-col items-center justify-center space-y-2 text-center h-96"
           id="intro"
@@ -377,10 +377,17 @@ export function RootUI() {
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {projects.map((project) => {
                 return (
-                  <Card key={project.title} className="w-full md:80 shadow-2xl space-y-4 sm:space-y-0 my-5 sm:my-auto p-4 sm:p-0">
+                  <Card
+                    key={project.title}
+                    className="w-full md:80 shadow-2xl space-y-4 sm:space-y-0 my-5 sm:my-auto p-4 sm:p-0"
+                  >
                     <CardHeader>
-                      <CardTitle className="text-5xl sm:text-2xl">{project.title}</CardTitle>
-                      <CardDescription className="text-3xl sm:text-lg">{project.description}</CardDescription>
+                      <CardTitle className="text-5xl sm:text-2xl">
+                        {project.title}
+                      </CardTitle>
+                      <CardDescription className="text-3xl sm:text-lg">
+                        {project.description}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <Image
@@ -415,7 +422,10 @@ export function RootUI() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:gap-8 justify-center pt-10" id="contact">
+          <div
+            className="flex flex-col sm:flex-row sm:gap-8 justify-center pt-10"
+            id="contact"
+          >
             <div className="basis-2/3 mx-auto sm:mx-0">
               <h2 className="text-5xl font-bold tracking-tighter sm:text-3xl text-center mb-5">
                 Contact Me
@@ -466,7 +476,10 @@ export function RootUI() {
                     ></Textarea>
                   </div>
 
-                  <Button type="submit" className="mt-4 justify-center text-4xl sm:text-base h-20 sm:h-auto rounded-2xl">
+                  <Button
+                    type="submit"
+                    className="mt-4 justify-center text-4xl sm:text-base h-20 sm:h-auto rounded-2xl"
+                  >
                     Submit
                     <SendHorizontal className="ml-2" />
                   </Button>
@@ -475,37 +488,38 @@ export function RootUI() {
             </div>
           </div>
         </section>
-      <footer className="flex flex-col gap-8 sm:flex-row py-6 w-full shrink-0 items-center sm:px-6 border-t">
-        <p className="text-2xl sm:text-base text-gray-500 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} Adhham Safwan. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <a
-            target="_blank"
-            className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
-            href="https://twitter.com/AdhhamDev"
-          >
-            <Twitter className="w-10 h-10 sm:w-6" />
-            Twitter
-          </a>
-          <a
-            target="_blank"
-            className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
-            href="https://github.com/adhhamdev"
-          >
-            <Github className="w-10 h-10 sm:w-6" />
-            GitHub
-          </a>
-          <a
-            target="_blank"
-            className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
-            href="https://www.linkedin.com/in/adhham/"
-          >
-            <Linkedin className="w-10 h-10 sm:w-6" />
-            LinkedIn
-          </a>
-        </nav>
-      </footer>
+        <footer className="flex flex-col gap-8 sm:flex-row py-6 w-full shrink-0 items-center sm:px-6 border-t">
+          <p className="text-2xl sm:text-base text-gray-500 dark:text-gray-400">
+            &copy; {new Date().getFullYear()} Adhham Safwan. All rights
+            reserved.
+          </p>
+          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+            <a
+              target="_blank"
+              className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
+              href="https://twitter.com/AdhhamDev"
+            >
+              <Twitter className="w-10 h-10 sm:w-6" />
+              Twitter
+            </a>
+            <a
+              target="_blank"
+              className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
+              href="https://github.com/adhhamdev"
+            >
+              <Github className="w-10 h-10 sm:w-6" />
+              GitHub
+            </a>
+            <a
+              target="_blank"
+              className="text-2xl sm:text-base hover:underline underline-offset-4 flex flex-col items-center"
+              href="https://www.linkedin.com/in/adhham/"
+            >
+              <Linkedin className="w-10 h-10 sm:w-6" />
+              LinkedIn
+            </a>
+          </nav>
+        </footer>
       </main>
     </div>
   );
