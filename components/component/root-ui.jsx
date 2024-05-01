@@ -193,20 +193,20 @@ export function RootUI() {
           id="intro"
         >
           <div className="space-y-2">
-            <h1 className="text-5xl font-bold tracking-tighter lg:text-6xl">
+            <h1 className="text-6xl font-bold tracking-tighter lg:text-6xl">
               Adhham Safwan
             </h1>
-            <p className="text-xl sm:text-base max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-bold">
+            <p className="text-3xl sm:text-base max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 font-bold">
               Full Stack Web Developer
             </p>
-            <p className="text-2xl sm:text-base max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p className="text-3xl sm:text-base max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
               Bringing ideas to life through code Crafting digital experiences
               that are both beautiful and functional.
             </p>
           </div>
           <div className="flex items-center justify-center space-x-4 pt-5">
             <a
-              className="text-3xl sm:text-sm inline-flex h-12 sm:h-9 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm px-4 font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
+              className="text-3xl sm:text-sm inline-flex h-16 sm:h-9 items-center justify-center rounded-md border border-slate-200 bg-white shadow-sm px-4 font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
               href="#contact"
             >
               <Contact className="mr-2 size-9 sm:size-auto" />
@@ -214,11 +214,11 @@ export function RootUI() {
             </a>
             <a
               target="_blank"
-              className="text-3xl sm:text-sm h-12 sm:h-9 inline-flex items-center justify-center rounded-md border border-slate-200  bg-white shadow-sm px-4 font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
+              className="text-3xl sm:text-sm h-16 sm:h-9 inline-flex items-center justify-center rounded-md border border-slate-200  bg-white shadow-sm px-4 font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
               href="https://drive.google.com/file/d/1nJJXINjPP8KVjHibXZc8XoSSXjwFheDI"
               download
             >
-              <FileText className="mr-2  size-9 sm:size-auto" />
+              <FileText className="mr-2 size-9 sm:size-auto" />
               Resume
             </a>
           </div>
@@ -228,7 +228,7 @@ export function RootUI() {
             <h2 className="text-5xl font-bold tracking-tighter lg:text-3xl">
               About Me
             </h2>
-            <p className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400 p-8 text-2xl sm:text-base">
+            <p className="max-w-prose text-gray-500 md:text-xl/relaxed dark:text-gray-400 p-8 text-3xl sm:text-base">
               Highly motivated BTEC HND in Software Engineering student and
               self-taught Full Stack Developer with a strong focus on building
               websites with exceptional SEO and accessibility. Skilled in
@@ -249,7 +249,7 @@ export function RootUI() {
                 <h2 className="text-5xl font-bold tracking-tighter sm:text-3xl md:text-3xl">
                   My Education Journey
                 </h2>
-                <p className="text-gray-500 dark:text-gray-400 text-xl sm:text-xl">
+                <p className="text-gray-500 dark:text-gray-400 text-2xl sm:text-xl">
                   Explore the milestones that have shaped my academic and
                   professional development.
                 </p>
