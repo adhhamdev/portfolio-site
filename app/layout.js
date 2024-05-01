@@ -12,21 +12,21 @@ export const viewport = {
 }
 
 export const metadata = {
-  title: "Adhham Safwan | Portfolio",
-  description: "Adhham Safwan",
+  title: "Adhham Safwan | Full Stack Web Developer",
+  description: "Bringing ideas to life through code Crafting digital experiences that are both beautiful and functional.",
   openGraph: {
-    title: "Adhham Safwan | Portfolio",
-    description: "Adhham Safwan, Student at Esoft Metro Campus",
+    title: "Adhham Safwan | Full Stack Web Developer",
+    description: "Bringing ideas to life through code Crafting digital experiences that are both beautiful and functional.",
     type: "website",
     locale: "en_US",
     url: "https://adhhamdev.vercel.app",
-    siteName: "Adhham Safwan | Portfolio",
+    siteName: "Adhham Safwan | Full Stack Web Developer",
     authors: ['Adhham Safwan'],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adhham Safwan | Portfolio",
-    description: "Adhham Safwan, Student at Esoft Metro Campus",
+    title: "Adhham Safwan | Full Stack Web Developer",
+    description: "Bringing ideas to life through code Crafting digital experiences that are both beautiful and functional.",
     creator: "Adhham Safwan",
   },
   
