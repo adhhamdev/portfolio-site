@@ -150,40 +150,40 @@ export function RootUI() {
             />
             <span className="sr-only">Adhham Safwan</span>
           </a>
-          <nav className="ml-auto gap-4 sm:gap-8 sm:flex hidden">
+          <nav className="sm:gap-8 sm:flex sm:relative sm:inset-0 sm:p-0 sm:shadow-none ml-auto gap-4 grid fixed top-28 right-0 p-8 bg-white rounded-xl shadow-xl z-10">
             <a
-              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#intro"
             >
-              <User className="mr-2" />
+              <User className="mr-4 size-10 sm:size-auto" />
               Intro
             </a>
             <a
-              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#education"
             >
-              <GraduationCap className="mr-2" />
+              <GraduationCap className="mr-4 size-10 sm:size-auto" />
               Education
             </a>
             <a
-              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#skills"
             >
-              <CodeSquare className="mr-2" />
+              <CodeSquare className="mr-4 size-10 sm:size-auto" />
               Skills
             </a>
             <a
-              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#projects"
             >
-              <Folders className="mr-2" />
+              <Folders className="mr-4 size-10 sm:size-auto" />
               Projects
             </a>
             <a
-              className="text-sm font-medium hover:underline underline-offset-4 flex items-center"
+              className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#contact"
             >
-              <Contact className="mr-2" />
+              <Contact className="mr-4 size-10 sm:size-auto" />
               Contact
             </a>
           </nav>
