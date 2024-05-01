@@ -3,6 +3,15 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport = {
+  themeColor: "#ff00ff",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false
+}
+
 export const metadata = {
   title: "Adhham Safwan | Portfolio",
   description: "Adhham Safwan",
