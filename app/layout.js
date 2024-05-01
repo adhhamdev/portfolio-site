@@ -16,25 +16,20 @@ export const metadata = {
   description: "Adhham Safwan",
   openGraph: {
     title: "Adhham Safwan | Portfolio",
-    description: "Adhham Safwan",
+    description: "Adhham Safwan, Student at Esoft Metro Campus",
     type: "website",
     locale: "en_US",
-    url: "https://adhham.com",
-    site_name: "Adhham Safwan",
-    images: [
-      {
-        url: "",
-        width: 1200,
-        height: 630,
-        alt: "Adhham Safwan",
-      },
-    ],
+    url: "https://adhhamdev.vercel.app",
+    siteName: "Adhham Safwan | Portfolio",
+    authors: ['Adhham Safwan'],
   },
   twitter: {
-    handle: "@adhham",
-    site: "@adhham",
-    cardType: "summary_large_image",
-  }
+    card: "summary_large_image",
+    title: "Adhham Safwan | Portfolio",
+    description: "Adhham Safwan, Student at Esoft Metro Campus",
+    creator: "Adhham Safwan",
+  },
+  
 };
 
 export default function RootLayout({ children }) {
