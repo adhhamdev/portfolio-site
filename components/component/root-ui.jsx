@@ -18,6 +18,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import MenuBtn from "./menu-btn";
 import Image from "next/image";
 
 import {
@@ -34,8 +35,13 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import { useState } from "react";
 
 export function RootUI() {
+  const [menuState, setMenuState] = useState(false);
+  const handleMenu = () => {
+    setMenuState(!menuState);
+  }
   const skillItems = [
     { title: "HTML", src: "/html.png", alt: "HTML", width: 256, height: 256 },
     { title: "CSS", src: "/css.png", alt: "CSS", width: 256, height: 256 },
@@ -139,7 +145,7 @@ export function RootUI() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="grid gap-6 sm:gap-12 lg:gap-16 px-4 md:px-6 pt-3">
-        <header className="px-4 lg:px-6 flex items-center justify-center">
+        <header className="px-6 py-3 sm:py-0 sm:px-6 flex items-center justify-between">
           <a className="flex items-center justify-center" href="#">
             <Image
               src="/profile.jpg"
@@ -150,7 +156,8 @@ export function RootUI() {
             />
             <span className="sr-only">Adhham Safwan</span>
           </a>
-          <nav className="sm:gap-8 sm:flex sm:relative sm:inset-0 sm:p-0 sm:shadow-none ml-auto gap-4 grid fixed top-28 right-0 p-8 bg-white rounded-xl shadow-xl z-10">
+          <MenuBtn handleMenu={handleMenu} menuState={menuState} />
+          <nav className={`sm:gap-8 sm:flex sm:relative sm:inset-0 sm:p-0 sm:shadow-none ml-auto gap-4 grid fixed top-28 right-0 p-8 bg-white rounded-xl shadow-xl z-10 ${menuState ? 'right-0' : '-right-full'} transition-all duration-300`}>
             <a
               className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#intro"
