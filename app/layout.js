@@ -5,10 +5,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const viewport = {
   themeColor: "#112233",
-  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
+  viewportFit: "contain"
 };
 
 export const metadata = {
