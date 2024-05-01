@@ -157,7 +157,7 @@ export function RootUI() {
             <span className="sr-only">Adhham Safwan</span>
           </a>
           <MenuBtn handleMenu={handleMenu} menuState={menuState} />
-          <nav className={`sm:gap-8 sm:flex sm:relative sm:inset-0 sm:p-0 sm:shadow-none ml-auto gap-4 grid fixed top-28 right-0 p-8 bg-white rounded-xl shadow-xl z-10 ${menuState ? 'right-0' : '-right-full'} transition-all duration-300`}>
+          <nav className={`sm:gap-8 sm:flex sm:relative sm:inset-0 sm:p-0 sm:shadow-none ml-auto gap-4 grid fixed top-28 right-0 p-8 bg-white rounded-xl shadow-xl z-10 ${menuState ? 'right-0' : '-right-96'} transition-all duration-300`}>
             <a
               className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#intro"
