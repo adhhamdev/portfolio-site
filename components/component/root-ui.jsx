@@ -222,7 +222,7 @@ export function RootUI() {
             <a
               target="_blank"
               className="text-3xl sm:text-sm h-16 sm:h-9 inline-flex items-center justify-center rounded-md border border-slate-200  bg-white shadow-sm px-4 font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-slate-800"
-              href="https://drive.google.com/file/d/1nJJXINjPP8KVjHibXZc8XoSSXjwFheDI"
+              href="https://1drv.ms/w/s!AsgpSd3OI0F43RDNBeBZjqHvkGhu?e=GVi1X4"
               download
             >
               <FileText className="mr-2 size-9 sm:size-auto" />
