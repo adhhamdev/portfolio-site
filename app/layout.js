@@ -4,12 +4,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport = {
-  themeColor: "#ff00ff",
-  colorScheme: "dark",
+  themeColor: "#112233",
+  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false
 }
 
 export const metadata = {
