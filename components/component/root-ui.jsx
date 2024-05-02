@@ -1,4 +1,4 @@
-"use client";
+import { useState } from "react";
 import {
   CardTitle,
   CardDescription,
@@ -14,12 +14,9 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import MenuBtn from "./menu-btn";
 import Image from "next/image";
+import Form from "./form";
 
 import {
   User,
@@ -30,18 +27,16 @@ import {
   FileText,
   AppWindow,
   Code2,
-  SendHorizontal,
   Github,
   Linkedin,
   Twitter,
 } from "lucide-react";
-import { useState } from "react";
 
 export function RootUI() {
   const [menuState, setMenuState] = useState(false);
   const handleMenu = () => {
     setMenuState(!menuState);
-  }
+  };
   const skillItems = [
     { title: "HTML", src: "/html.png", alt: "HTML", width: 256, height: 256 },
     { title: "CSS", src: "/css.png", alt: "CSS", width: 256, height: 256 },
@@ -157,7 +152,11 @@ export function RootUI() {
             <span className="sr-only">Adhham Safwan</span>
           </a>
           <MenuBtn handleMenu={handleMenu} menuState={menuState} />
-          <nav className={`sm:gap-8 sm:flex sm:relative sm:inset-0 sm:p-0 sm:shadow-none ml-auto gap-4 grid fixed top-28 p-8 bg-white rounded-xl shadow-xl z-10 ${menuState ? 'right-0' : '-right-96'} transition-all duration-300`}>
+          <nav
+            className={`sm:gap-8 sm:flex sm:relative sm:inset-0 sm:p-0 sm:shadow-none ml-auto gap-4 grid fixed top-28 p-8 bg-white rounded-xl shadow-xl z-10 ${
+              menuState ? "right-0" : "-right-96"
+            } transition-all duration-300`}
+          >
             <a
               className="rounded-lg hover:bg-slate-400 text-4xl sm:text-sm sm:p-0 px-10 py-6 font-medium hover:underline underline-offset-4 flex items-center sm:hover:bg-transparent"
               href="#intro"
@@ -443,54 +442,7 @@ export function RootUI() {
                   I appreciate you taking the time to provide feedback. Your
                   thoughts help me improve my work!
                 </h3>
-
-                <form className="grid gap-4">
-                  <div className="grid gap-2 my-4 sm:my-auto">
-                    <Label className="text-4xl sm:text-base" htmlFor="name">
-                      Name
-                    </Label>
-                    <Input
-                      id="name"
-                      type="text"
-                      required
-                      placeholder="Enter your name..."
-                      className="text-3xl sm:text-base h-20 sm:h-auto"
-                    />
-                  </div>
-
-                  <div className="grid gap-2 my-4 sm:my-auto">
-                    <Label className="text-4xl sm:text-base" htmlFor="email">
-                      Email
-                    </Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      required
-                      placeholder="Enter your email..."
-                      className="text-3xl sm:text-base h-20 sm:h-auto"
-                    />
-                  </div>
-
-                  <div className="grid gap-2 my-4 sm:my-auto">
-                    <Label className="text-4xl sm:text-base" htmlFor="message">
-                      Message
-                    </Label>
-                    <Textarea
-                      id="message"
-                      required
-                      placeholder="Enter your message..."
-                      className="text-3xl sm:text-base h-40 sm:h-auto"
-                    ></Textarea>
-                  </div>
-
-                  <Button
-                    type="submit"
-                    className="mt-4 justify-center text-4xl sm:text-base h-20 sm:h-auto rounded-2xl"
-                  >
-                    Submit
-                    <SendHorizontal className="ml-2" />
-                  </Button>
-                </form>
+                <Form />
               </div>
             </div>
           </div>
