@@ -3,13 +3,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const viewport = {
-  themeColor: "#112233",
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-};
-
 export const metadata = {
   metadataBase: new URL("https://adhhamdev.vercel.app"),
   title: "Adhham Safwan | Full Stack Web Developer",
